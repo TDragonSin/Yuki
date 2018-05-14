@@ -1,5 +1,6 @@
 //二级菜单
 $(document).on("mouseover",".typeLi",function(){
+  // console.log(this)
   $(this).find(".hideUl").show();
     if($(this).find(".hideUl2").has("li").length!=0){
       $(this).find(".hideUl2").show();
@@ -24,9 +25,12 @@ $(document).on("mouseout","#typeList",function(){
 });
 
 //正则替换
-var str = `<span onclick="location.href='/web/good/goodList/null/0/2/51/null/populardown/0/0/0'">单肩/背包</span>`
-var reg = /\s+onclick="location\.href='.+'"/g
-console.log(str.replace(reg,""))
+var str = ``
+// var reg = /\s+onclick="location\.href='.+'"/g
+var reg2 = /href=".+"/g
+// str.replace(reg,"")
+str.replace(reg2,'href=""')
+console.log(str.replace(reg2,'href=""'))
 
 //轮播图按钮
 $(document).on("mouseover",".slider_con",function(){

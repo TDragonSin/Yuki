@@ -1,5 +1,5 @@
 function Imgmouseover(select,sizeNew,sizeOld){
-  this.ele = $(select);
+  this.select = select;
   this.sizeNew = sizeNew;
   this.sizeOld = sizeOld;
   this.init();
@@ -7,19 +7,22 @@ function Imgmouseover(select,sizeNew,sizeOld){
 Imgmouseover.prototype = {
   constructor:Imgmouseover,
   init:function(){
-    this.ele.on("mouseover",$.proxy(this.bigger,this))
-    this.ele.on("mouseout",$.proxy(this.smaller,this))
+    $(document).on("mouseover",this.select,{New:this.sizeNew},this.bigger)
+    $(document).on("mouseout",this.select,{old:this.sizeOld},this.smaller)
   },
-  bigger:function(){
-    this.ele.animate({
-      width:"'"+this.sizeNew+"'",
-      height:"'"+this.sizeNew+"'",
-    },2000)
+  bigger:function(event){
+    console.log($(this))
+    console.log(event.data.New)
+      $(this).animate({
+        width:"'"+event.data.New+"'",
+        height:"'"+event.data.New+"'"
+    },2000,function(){console.log("width:"+"'"+event.data.New+"'")})
   },
-  smaller:function(){
-    this.ele.animate({
-      width:"'"+this.sizeOld+"'",
-      height:"'"+this.sizeOld+"'",
+  smaller:function(event){
+      $(this).animate({
+        width:"event.data.old",
+        height:"event.data.old"
     },2000)
   }
 }
+new Imgmouseover(".flashSale-li-img>img",210,199)

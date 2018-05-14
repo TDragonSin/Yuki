@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', "WenQuanYi Micro Hei", SimSun, Tahoma, Arial, Helvetica, STHeiti;
+    font-size: 12px;
+    width:100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body, div, ul, li, input, p, span, a, img, header, aside, nav, section, h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  box-sizing: border-box;
+  font-family: 'Hiragino Sans GB', 'Microsoft Yahei', "WenQuanYi Micro Hei", SimSun, Tahoma, Arial, Helvetica, STHeiti;
+}
+li{
+    list-style:none;
+}
+ul,ol{
+    list-style: none;
+}
+input,button{
+    border:none;
+}
+.lt{
+    float:left;
+}
+.rt{
+    float:right;
+}
+.clearfloat:after{
+    content:"";
+    display:table;
+    height:0;
+    clear:both;
+    visibility: hidden;
+}
+.clear:before{
+    content:"";
+    display:table;
+    clear:both;
+    height:0;
+    visibility: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+input,a{
+	outline: none;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+button {
+    cursor: pointer;
+    outline: none;
+}
+em, i {
+    font-style: normal;
+}

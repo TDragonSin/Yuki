@@ -1,15 +1,15 @@
 ; +function ($) {
   $.fn.gpBanner2 = function (banner_selector, options) {
-    new Banner(banner_selector, options, this);
+    new Banner(banner_selector, options);
   }
 
-  function Banner(banner_selector, options, base_ele) {
-    this.init(banner_selector, options, base_ele);
+  function Banner(banner_selector, options) {
+    this.init(banner_selector, options);
   }
 
   Banner.prototype = {
     constructor: Banner,
-    init: function (banner_selector, options, base_ele) {
+    init: function (banner_selector, options) {
       this.index = 0;
       this.bannerWrapper = $(banner_selector);
       this.direction = options.direction ? options.direction : "fade";

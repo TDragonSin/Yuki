@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yuki动漫-更懂你的二次元社区电商（yukicomic.com）</title>
+  <link rel="shortcut icon" href="http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukiicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/register.css">
+</head>
+<body>
+  <iframe src="header.html" frameborder="0" width="100%" height="146" style="display:block"></iframe>
+  <div class="bgc">
+    <div class="login">
+      <div class="loginbox">
+        <ul class="logchirdren">
+          <li style="font-size:20px;color:#666666;margin-bottom:40px;">新用户注册
+            <span style="cursor: pointer;float: right;text-decoration:underline;margin-top: 10px;">
+              <a href="">已有账号</a>
+            </span>
+          </li>
+          <li style="width:100%;height:20px;display: none;" class="warning errtext">
+            <i class="warning-icon">
+              <img src="register_img/error.png" alt="">
+            </i>
+            <span class="chird-warning"></span>
+          </li>
+          <li style="border:1px solid #e5e5e5;border-radius:5px;height:40px;padding:6px;">
+            <span class="icon">
+              <img src="register_img/icon_user.png" alt="">
+            </span>
+            <input type="text" class="phone" placeholder="手机号码" name="phone">
+          </li>
+          <li>
+            <div style="margin-top:16px;border:1px solid #e5e5e5;border-radius:5px;height:40px;padding:6px;width:165px;margin-right:10px;">
+              <span class="icon">
+                <img src="register_img/icon_phon e.png" alt="">
+              </span>
+              <input type="text" class="Code" placeholder="短信验证码">
+            </div>
+            <button type="button" class="takecode">获取验证码</button>
+          </li>
+          <li style="margin-top:16px;border:1px solid #e5e5e5;border-radius:5px;height:40px;padding:6px;">
+            <span class="icon">
+              <img src="register_img/icon_password1.png" alt="">
+            </span>
+            <input type="password" class="pwd" placeholder="设置密码">
+          </li>
+          <li style="margin-top:16px;border:1px solid #e5e5e5;border-radius:5px;height:40px;padding:6px;">
+            <span class="icon">
+              <img src="register_img/icon_password2.png" alt="">
+            </span>
+            <input type="password" class="rpwd" placeholder="重复密码" name="password">
+          </li>
+          <li>
+            <button type="button" class="log" mytype="register_btn">立即注册</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <iframe src="foot.html" frameborder="0" width="100%" height="490" style="display:block"></iframe>
+</body>
+<script src="src/libs/require.js"></script>
+<script>
+  require(["./src/libs/require.config"], function () {
+    require(["index2"])
+  })
+</script>
+</html>

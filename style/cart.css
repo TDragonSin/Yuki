@@ -1,0 +1,338 @@
+form {
+  display: block;
+  margin-top: 0em;
+}
+.fullcar {
+  margin-top: 40px;
+  width: 100%;
+}
+.shopcartitle {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  border-radius: 5px;
+}
+.numbershop {
+  width: 100%;
+  height: 48px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #F5F5F5;
+  line-height: 48px;
+  font-size: 14px;
+  color: #666666;
+}
+.numbershop span {
+  margin-left: 180px;
+}
+.shopvlue {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  border-bottom: 1px dashed #e5e5e5;
+}
+.shopvlue:last-child {
+  border-bottom: 0;
+}
+.shopimg {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+}
+.shopimg img {
+  max-width: 90px;
+  width: auto;
+  max-height: 90px;
+  height: auto;
+}
+.shoprull {
+  margin-left: 14px;
+  position: absolute;
+  margin-top: 41px;
+  cursor: pointer;
+}
+.shoprull li {
+  width: 260px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.price {
+  position: absolute;
+  top: 58px;
+  left: 420px;
+}
+.gw_number {
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  left: 575px;
+}
+.gw_num {
+  margin-left: 24px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  width: 102px;
+  line-height: 34px;
+  overflow: hidden;
+  height: 34px;
+  float: left;
+}
+.gw_num .yunsuan {
+  display: block;
+  height: 34px;
+  width: 32px;
+  float: left;
+  color: #7A7979;
+  text-align: center;
+  cursor: pointer;
+  height: 34px;
+}
+.jian {
+  border-right: 1px solid #dbdbdb;
+}
+.gw_num .num {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 34px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 34px;
+  border: 0;
+  outline: none;
+  height: 34px;
+}
+.add {
+  border-left: 1px solid #dbdbdb;
+}
+.del {
+  width: 10px;
+  height: 10px;
+  margin-top: 5px;
+  float: right;
+  margin-right: 16px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.buyshop {
+  width: 100%;
+  height: 64px;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.clearing {
+  width: 128px;
+  height: 100%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #6699cc;
+  color: #ffffff;
+  font-size: 20px;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+}
+.clearing span {
+  font-size: 20px;
+  line-height: 64px;
+}
+.oldprice {
+  float: right;
+  margin-right: 30px;
+  margin-top: 6px;
+}
+/***********slider***************/
+.slider {
+  width: 1170px;
+  height: 290px;
+  /* position: relative; */
+  margin: 0 auto;
+}
+.shoplist {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.shoptitle {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+.slider .device {
+  width: 1170px;
+  height: 290px;
+  /* position: absolute; */
+  overflow: hidden;
+}
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+.swiper-container {
+  width: 1920px;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+}
+.swiper-slide {
+  float: left;
+}
+.shopshow {
+  float: left;
+  margin-left: -16px;
+}
+.shopshowchirdren1 {
+  width: 218px;
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+  height: 270px;
+  margin-left: 16px;
+}
+.shopshowchirdren1 {
+  border-radius: 5px;
+}
+.img {
+  width: 216px;
+  height: 198px;
+}
+.imgchirdren {
+  width: 178px;
+  height: 178px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.imgfind>img {
+  width: 178px;
+  height: 178px;
+  transition: transform 2s;
+}
+.name {
+  height: 70px;
+  text-align: center;
+  overflow: hidden;
+}
+.name li {
+  margin-top: 14px;
+  height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.oprice {
+  color: #e33955;
+}
+/*****************backtop*******************/
+.rightFixed {
+  position: fixed;
+  left: 50%;
+  margin-left: 605px;
+  bottom: 100px;
+}
+.nav-right {
+  width: 70px;
+  z-index: 8;
+}
+.nav-right div .gouwudai, .nav-right div .backTop {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+.nav-right div {
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+}
+#serviceBtn {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E5E5E5;
+  border-bottom: 0;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+#serviceBtn .serviceBtnName {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  height: 14px;
+}
+#serviceBtn .serviceBtnIcon {
+  width: 22px;
+  height: 23px;
+  background: url(http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/service.png) no-repeat;
+  background-size: 100%;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.nav-right .shopping-car {
+  border: 1px solid #E5E5E5;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav-right div img {
+  width: 20px;
+  height: 20px;
+  margin-top: 13px;
+  margin-left: 25px;
+}
+.nav-right div .gouwudai {
+  height: 14px;
+}
+.ba {
+  background: #E33955;
+}
+.badged {
+  position: absolute;
+  display: block;
+  top: 75px;
+  left: 40px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 9px;
+  padding: 0 4px;
+}
+.nav-right .top {
+  margin-top: 20px;
+  background: #6699CC;
+  cursor: pointer;
+}
+.nav-right div .topIcon {
+  width: 14px;
+  height: 7px;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+.nav-right .top .backTop {
+  color: #ffffff;
+  margin-top: 3px;
+}
+.nav-right div .backTop {
+  height: 70px;
+}
+
+
+

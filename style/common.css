@@ -7,7 +7,6 @@ body{
     font-size: 12px;
     width:100%;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 body, div, ul, li, input, p, span, a, img, header, aside, nav, section, h2 {
   margin: 0;

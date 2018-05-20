@@ -24,13 +24,6 @@ $(document).on("mouseout","#typeList",function(){
     });
 });
 
-//正则替换
-var str = ``
-// var reg = /\s+onclick="location\.href='.+'"/g
-var reg2 = /href=".+"/g
-// str.replace(reg,"")
-str.replace(reg2,'href=""')
-console.log(str.replace(reg2,'href=""'))
 
 //轮播图按钮
 $(document).on("mouseover",".slider_con",function(){

@@ -1,0 +1,664 @@
+.all {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+.navtitle {
+  width: 100%;
+  height: 56px;
+  text-align: left;
+}
+.navtitle span {
+  line-height: 56px;
+}
+.navtitle span a:hover{
+  color: #6699cc;
+}
+.shopshow {
+  width: 100%;
+  position: relative;
+}
+.showleft {
+  width: 570px;
+  height: 100%;
+  display: inline-block;
+}
+.left-pro {
+  width: 570px;
+  text-align: left;
+  float: left;
+  height: 100%;
+}
+.left-pro .t1 {
+  float: left;
+}
+.t1 {
+  position: relative;
+}
+#gotop {
+  width: 100%;
+  height: 24px;
+  background-color: #000000;
+  opacity: .3;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  display: none;
+}
+#gotop img {
+  margin-left: 37px;
+  margin-top: 8px;
+}
+#showArea {
+  width: 86px;
+  overflow: hidden;
+}
+#showArea {
+  top: 0;
+  height: 470px;
+  overflow: hidden !important;
+}
+#showArea img {
+  cursor: pointer;
+  display: block;
+  width: 86px;
+  padding: 1px;
+  border: 1px solid #ccc;
+  height: 86px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  float: left;
+}
+#gobottom {
+  width: 100%;
+  height: 24px;
+  background-color: #000000;
+  opacity: .3;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  display: none;
+}
+#gobottom img {
+  margin-left: 37px;
+  margin-top: 8px;
+}
+.left-pro .t2 {
+  width: 470px;
+  height: 470px;
+  text-indent: 0;
+  float: left;
+  padding-left: 14px;
+  position: relative;
+}
+#zoom1 {
+  border-radius: 4px;
+  width: 472px !important;
+}
+.left-pro .t2 img {
+  text-indent: 0;
+}
+.MagicZoomBigImageCont {
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  background: #ffffff;
+}
+.MagicZoomBigImageCont img {
+  width: 800px;
+  height: 800px;
+}
+.MagicZoomPup {
+  background: #fff;
+  cursor: pointer;
+  left: 0;
+}
+/******************showright*****************/
+.showright {
+  width: 520px;
+  margin-left: 76px;
+  display: inline-block;
+  vertical-align: top;
+}
+.shopprice {
+  border-top: 1px dashed #d9d9d9;
+  background-color: #f5f5f5;
+  border-bottom: 1px dashed #d9d9d9;
+}
+.shoppricechird {
+  height: 80px;
+  width: 100%;
+  margin-top: -5px;
+}
+.active1 {
+  margin-top: 14px;
+  margin-left: 10px;
+  text-align: left;
+}
+.active li {
+  display: inline-block;
+}
+.value {
+  margin-left: 24px;
+}
+.disc {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  float: left;
+  background-color: #333333;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 7px;
+}
+.shoprule {
+  width: 100%;
+}
+.message {
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+}
+.message li {
+  height: 34px;
+  display: inline-block;
+}
+.type {
+  float: left;
+}
+.rulebox {
+  width: 416px;
+  margin-left: 60px;
+  display: block;
+  margin-top: -34px;
+}
+.rulebox li {
+  margin-bottom: 5px;
+}
+.message li {
+  height: 34px;
+  display: inline-block;
+}
+.desc {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 34px;
+  margin-right: 12px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.sel {
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/icon.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.gw_number {
+  width: 100%;
+  height: 34px;
+  margin-top: 20px;
+}
+.gw_number span {
+  line-height: 34px;
+  float: left;
+  margin-left: 10px;
+}
+.gw_num {
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  width: 102px;
+  line-height: 34px;
+  overflow: hidden;
+  height: 34px;
+  float: left;
+}
+.gw_num .jian {
+  display: block;
+  height: 34px;
+  width: 32px;
+  float: left;
+  color: #7A7979;
+  border-right: 1px solid #dbdbdb;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 0;
+}
+.gw_num .num {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 26px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 34px;
+  border: 0;
+  outline: none;
+  height: 34px;
+  color: #333;
+}
+.add {
+  height: 34px;
+  width: 102px;
+  margin-left: 24px;
+  text-align: center;
+  line-height: 34px;
+}
+.gw_num .add1 {
+  display: block;
+  height: 34px;
+  width: 32px;
+  float: left;
+  color: #7A7979;
+  border-left: 1px solid #dbdbdb;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 0;
+}
+.leftCount {
+  float: left;
+  margin-left: 12px;
+  line-height: 34px;
+  color: #333;
+  height: 100%;
+}
+.pay {
+  width: 100%;
+  height: 48px;
+  margin-top: 40px;
+}
+.pay li {
+  display: inline-block;
+  line-height: 44px;
+  border-radius: 6px;
+  float: left;
+}
+.buy {
+  width: 158px;
+  height: 48px;
+  border: 2px solid #6699cc;
+  background-color: #ffffff;
+  font-size: 20px;
+  color: #6699cc;
+  text-align: center;
+  cursor: pointer;
+}
+.buy:hover {
+  background-color: #cce6ff;
+}
+.shopcar {
+  width: 158px;
+  height: 48px;
+  border: 2px solid #6699cc;
+  background-color: #6699cc;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.shopcar:hover {
+  background-color: #729FCC;
+}
+.share {
+  height: 48px;
+  width: 152px;
+}
+.sharechild, .sharechild1 {
+  display: inline-block;
+  width: 40px;
+  height: 48px;
+  margin-left: 30px;
+  text-align: center;
+  line-height: 15px;
+  cursor: pointer;
+}
+.sharechild img, .sharechild1 img {
+  margin-top: 10px;
+  margin-left: 12px;
+  width: 16px;
+  height: 15px;
+  float: left;
+}
+.sharechild span, .sharechild1 span {
+  height: 12px;
+  width: 40px;
+  text-align: center;
+  margin-top: 5px;
+  float: left;
+  color: #999999;
+}
+/*******************xiabu**************************/
+.shopleft {
+  position: relative;
+  margin-left: -30px;
+}
+.shopmessage {
+  background-color: #f5f5f5;
+  font-size: 14px;
+}
+.shopvalue {
+  text-align: center;
+  line-height: 48px;
+  background-color: #ffffff;
+  border-top-left-radius: 6px;
+  color: #6699cc;
+  display: inline-block;
+}
+.shopvalue {
+  font-size: 14px;
+  cursor: pointer;
+}
+.eavl {
+  float: left;
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+  text-align: center;
+  line-height: 47px;
+}
+.shopvalueshow {
+  width: 788px;
+  margin: 0;
+  left: 0;
+  top: 48px;
+}
+.shopvalueshow img {
+  width: 100%;
+}
+/**********showmetheshop***************/
+.showmetheshop {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  display: none;
+}
+.evaluate {
+  width: 100%;
+  padding: 0 20px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.evaluate .evaluateList {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.evaluate .evaluateList li {
+  float: left;
+  margin-right: 20px;
+  height: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.evaluate .evaluateList li .evaluateIcon {
+  width: 16px;
+  height: 16px;
+}
+.evaluate .evaluateList li .evaluateType {
+  float: right;
+  height: 100%;
+  line-height: 16px;
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+}
+.evaluate .replyList {
+  width: 100%;
+  padding: 0 10px;
+}
+.evaluate .replyList .reply {
+  width: 100%;
+  padding-top: 30px;
+}
+.evaluate .replyList .reply .avatar-name {
+  width: 50px;
+  float: left;
+}
+.evaluate .replyList .reply .avatar-name .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.evaluate .replyList .reply .avatar-name .name {
+  font-size: 12px;
+  color: #666;
+  width: 100%;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.evaluate .replyList .reply .replyRight {
+  width: 650px;
+  margin-top: 5px;
+  display: inline-block;
+  margin-left: 23px;
+}
+.evaluate .replyList .reply .replyRight .content {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.evaluate .replyList .reply .replyRight .imgList {
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.evaluate .replyList .reply .replyRight .imgList .goodImg {
+  width: 60px;
+  height: 60px;
+  margin-right: 14px;
+  border: 1px solid #E6E6E6;
+}
+.evaluate .replyList .reply .replyRight .goodTypes-date {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 49px;
+}
+.evaluate .replyList .reply .replyRight .goodTypes-date .goodTypes {
+  font-size: 12px;
+  color: #999;
+  float: left;
+  line-height: 100%;
+}
+.evaluate .replyList .reply .replyRight .goodTypes-date .date {
+  font-size: 12px;
+  color: #999;
+  float: right;
+  line-height: 100%;
+}
+.largeImg {
+  width: 356px;
+  height: 356px;
+  position: relative;
+  display: none;
+}
+.largeImg .largeImg-img {
+  width: 100%;
+  height: 100%;
+}
+.largeImg .next-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  right: 0;
+}
+.page {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+}
+/**********guessyoulike**************/
+.showyourlike {
+  width: 320px;
+  margin: 0 auto;
+}
+.mylikebaby {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e5e5e5;
+  height: 130px;
+  width: 100%;
+  cursor: pointer;
+}
+.mylikebaby img {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+}
+.pricevalue {
+  display: inline-block;
+  width: 210px;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+.likenav {
+  font-size: 14px;
+  color: #333333;
+  display: block;
+  height: 38px;
+  line-height: 19px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  word-break: normal;
+  text-align: left;
+}
+.allprice {
+  width: 100%;
+  height: 22px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.redprice {
+  font-size: 20px;
+  color: #e33955;
+  float: left;
+}
+.sold {
+  font-size: 12px;
+  color: #666666;
+  float: right;
+  margin-top: 7px;
+}
+
+/*****************backtop*******************/
+.rightFixed {
+  position: fixed;
+  left: 50%;
+  margin-left: 605px;
+  bottom: 100px;
+}
+.nav-right {
+  width: 70px;
+  z-index: 8;
+}
+.nav-right div .gouwudai, .nav-right div .backTop {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+.nav-right div {
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+}
+#serviceBtn {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E5E5E5;
+  border-bottom: 0;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+#serviceBtn .serviceBtnName {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  height: 14px;
+}
+#serviceBtn .serviceBtnIcon {
+  width: 22px;
+  height: 23px;
+  background: url(http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/service.png) no-repeat;
+  background-size: 100%;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.nav-right .shopping-car {
+  border: 1px solid #E5E5E5;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav-right div img {
+  width: 20px;
+  height: 20px;
+  margin-top: 13px;
+  margin-left: 25px;
+}
+.nav-right div .gouwudai {
+  height: 14px;
+}
+.ba {
+  background: #E33955;
+}
+.badged {
+  position: absolute;
+  display: block;
+  top: 75px;
+  left: 40px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 9px;
+  padding: 0 4px;
+}
+.nav-right .top {
+  margin-top: 20px;
+  background: #6699CC;
+  cursor: pointer;
+}
+.nav-right div .topIcon {
+  width: 14px;
+  height: 7px;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+.nav-right .top .backTop {
+  color: #ffffff;
+  margin-top: 3px;
+}
+.nav-right div .backTop {
+  height: 70px;
+}
+

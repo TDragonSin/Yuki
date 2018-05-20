@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yuki动漫-更懂你的二次元社区电商（yukicomic.com）</title>
+  <link rel="shortcut icon" href="http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukiicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/login.css">
+</head>
+
+<body>
+  <iframe src="header.html" frameborder="0" width="100%" height="146" style="display:block"></iframe>
+  <div class="bgc">
+    <div class="login">
+      <div class="loginbox">
+        <ul class="logchirdren">
+          <li style="font-size:20px;color:#666666;margin-bottom:40px;">Yuki账号登录</li>
+          <li style="width:100%;height:20px;display:none;" class="warning">
+            <i>
+              <img src="login_img/error.png" alt="">
+            </i>
+            <span class="chird-warning" style="margin-left:20px;margin-top:-18px;"></span>
+          </li>
+          <li style="border: 1px solid rgb(204, 204, 204); border-radius: 5px; height: 40px; padding: 6px;">
+            <span class="icon ">
+              <img src="login_img/icon_user.png" alt="">
+            </span>
+            <input type="text" class="phone loginid" placeholder="手机号码" id="phone" name="custPhone">
+          </li>
+          <li style="margin-top: 20px; border: 1px solid rgb(204, 204, 204); border-radius: 5px; height: 40px; padding: 6px;">
+            <span class="icon">
+              <img src="login_img/icon_password2.png" alt="">
+            </span>
+            <input type="password" class="pwd loginpwd" placeholder="输入密码" name="custPwd">
+          </li>
+          <li>
+            <button type="button" id="sub" class="log" mytype="login_btn">登录</button>
+          </li>
+          <li class="register">
+            <a href="">
+              <span>忘记密码?</span>
+            </a>
+            <a href="">
+              <span style="float:right">去注册</span>
+            </a>
+          </li>
+        </ul>
+        <fieldset>
+          <legend style="font-size:12px;color:#999999;">其他登录方式</legend>
+          <div class="logweibo">
+            <img src="login_img/icon_weibo_n.png" alt="">
+            <br>
+            <span style="font-size: 12px;color: #666666;">微博</span>
+          </div>
+          <div class="logqq">
+            <img src="login_img/icon_qq_n.png" alt="">
+            <br>
+            <span style="font-size: 12px;color: #666666;">QQ</span>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+  </div>
+  <div class="popMsgBox" style="display: none"></div>
+  <iframe src="foot.html" frameborder="0" width="100%" height="490" style="display:block"></iframe>
+</body>
+<script src="src/libs/require.js"></script>
+<script>
+  require(["./src/libs/require.config"], function () {
+    require(["index2"])
+  })
+</script>
+</html>

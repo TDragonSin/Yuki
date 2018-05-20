@@ -1,0 +1,100 @@
+.bgc {
+  width: 100%;
+  height: 570px;
+  margin-bottom: -80px;
+  background-image: url(../login_img/bgi.png);
+}
+.login {
+  width: 1170px;
+  margin: 0 auto;
+  text-align: right;
+}
+.loginbox {
+  width: 380px;
+  padding: 40px;
+  padding-bottom: 50px;
+  display: inline-block;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+.logchirdren {
+  width: 100%;
+}
+.icon {
+  display: inline-block;
+  width: 28px;
+  max-height: 28px;
+  padding: 2px;
+  padding-left: 0;
+  padding-right: 6px;
+  border-right: 1px solid #e5e5e5;
+}
+img {
+  border-style: none;
+}
+li input {
+  width: 245px;
+  height: 28px;
+  outline: none;
+  font-size: 12px;
+  color: #333333;
+  position: absolute;
+  border: none;
+  margin-left: 10px;
+  line-height: 28px;
+}
+.log {
+  margin-top: 40px;
+  width: 300px;
+  height: 48px;
+  border: 1px solid #ffffff;
+  background-color: #6699cc;
+  font-size: 22px;
+  color: #ffffff;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.register {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.register span {
+  font-size: 12px;
+  cursor: pointer;
+  color: #999999;
+}
+fieldset {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+fieldset>div {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.popMsgBox{
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -150px;
+  background: rgba(0,0,0,.5);
+  filter: progid: DXImageTransform.Microsoft.gradient(startcolorstr=#7f000000, endcolorstr=#7f000000);
+  text-align: center;
+  line-height: 100px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #ffffff;
+}
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/foot.css">
+</head>
+<body style="margin:0;padding:0">
+  <div class="footer">
+    <div class="serviceIcon-box">
+      <div class="serviceIcon">
+      </div>
+    </div>
+    <div class="followUs">
+      <ul class="us">
+        <li>
+          <a href="">关注我们</a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <img class="usIcon goWeiBo" src="images/weibo.png" alt="">
+          </a>
+          <a href="" class="weChartIcon">
+            <img class="usIcon" src="images/wechart.png" alt="">
+            <div class="erweima" style="display: none;">
+              <img class="imgQR" src="images/weChartQR.png" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="">售后服务</a>
+        </li>
+        <li>
+          <a href="">退货政策</a>
+        </li>
+        <li>
+          <a href="">退换货流程</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="">物流配送</a>
+        </li>
+        <li>
+          <a href="">配送范围和费用</a>
+        </li>
+        <li>
+          <a href="">快递送货</a>
+        </li>
+        <li>
+          <a href="">快递查询</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="">关于我们</a>
+        </li>
+        <li>
+          <a href="">联系我们</a>
+        </li>
+        <li>
+          <a href="">关于我们</a>
+        </li>
+      </ul>
+      <ul>
+        <li>下载Yuki动漫APP</li>
+        <li>
+          <img src="images/qrcode.jpg" alt="" class="QRcode">
+        </li>
+      </ul>
+    </div>
+    <div class="link">
+      <div class="linkBox">
+        <ul>
+          <li>友情链接</li>
+          <li>
+            <a href="http://se.360.cn" target="view_window">360安全浏览器</a>
+          </li>
+          <li>
+            <a href="https://hao.360.cn" target="view_window">360安全网址</a>
+          </li>
+          <li>
+            <a href="http://www.halihali.tv" target="view_window">哈哩哈哩</a>
+          </li>
+          <li>
+            <a href="https://www.iqing.in" target="view_window">轻文轻小说</a>
+          </li>
+          <li>
+            <a href="http://www.vortexfun.com" target="view_window">漩涡互娱</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    ©yukicomic.com&nbsp;&nbsp;&nbsp;&nbsp;南京闳之美文化传播有限公司保留最终解释权&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="http://www.miitbeian.gov.cn">苏ICP备15021329号-1</a>
+  </div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+   $(function(){
+    $(".weChartIcon").mouseover(function(){
+        $(".erweima").show();
+    }).mouseout(function(){
+        $(".erweima").hide();
+    })
+  });
+</script>
+</html>

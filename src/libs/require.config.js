@@ -1,0 +1,10 @@
+requirejs.config({
+    paths:{
+        "jquery":"./src/libs/jquery-3.3.1",
+        "goodsList":"./src/libs/jquery.goodsList",
+        "index":"./src/model/index",
+        "index2":"./src/model/index2",
+        "login":"./src/model/login",
+        "register":"./src/model/register",
+    }
+})

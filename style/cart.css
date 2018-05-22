@@ -335,5 +335,74 @@ form {
   height: 70px;
 }
 
-
+/*************popBox****************/
+.popWindow {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+}
+.popWindow .popBox {
+  width: 440px;
+  height: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -220px;
+  margin-top: -110px;
+  background: #ffffff;
+  border-radius: 6px;
+}
+.popWindow .popBox .popInformation {
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-top: 58px;
+}
+.popWindow .popBox .popBtn {
+  width: 284px;
+  height: 40px;
+  margin: 56px auto 0 auto;
+}
+.popWindow .popBox .popBtn .popButton {
+  width: 132px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.popWindow .popBox .popBtn .popEnsure {
+  background: #6699CC;
+  color: #ffffff;
+  float: left;
+}
+.popWindow .popBox .popBtn .popCancel {
+  background: #fff;
+  color: #333;
+  float: right;
+  border: 1px solid #D9D9D9;
+}
+/*********popMsgBox********************/
+.popMsgBox{
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -150px;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  line-height: 100px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #ffffff;
+}
 

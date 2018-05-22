@@ -17,9 +17,9 @@
     <form action="/web/order/toCheck" method="post" class="form">
       <div class="fullcar">
         <div class="shopcartitle">
-         <!--  -->
+          <!--  -->
         </div>
-      
+
       </div>
     </form>
     <div class="slider">
@@ -94,7 +94,7 @@
                     </div>
                     <ul class="name ">
                       <li style="overflow: hidden;">GOC IN C 二代小熊充电宝飘带熊棒球熊创意潮流卡通毛绒移动电源10000毫安</li>
-                      <li class="oprice ">￥318.0
+                      <li class="oprice">￥318.0
                         <del style="margin-left:10px;color:#999999 ">￥318.0</del>
                       </li>
                     </ul>
@@ -108,32 +108,43 @@
       </div>
     </div>
     <div class="nav-right rightFixed">
-        <div class="service">
-          <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2753982986&amp;site=qq&amp;menu=yes" id="serviceBtn">
-            <div class="serviceBtnIcon"></div>
-            <div class="serviceBtnName">联系客服</div>
-          </a>
-        </div>
-        <div class="top">
-          <img src="http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/Arrow-index.png" alt="" class="topIcon">
-          <div class="backTop">Top</div>
-        </div>
+      <div class="service">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2753982986&amp;site=qq&amp;menu=yes" id="serviceBtn">
+          <div class="serviceBtnIcon"></div>
+          <div class="serviceBtnName">联系客服</div>
+        </a>
+      </div>
+      <div class="top">
+        <img src="http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/Arrow-index.png" alt="" class="topIcon">
+        <div class="backTop">Top</div>
+      </div>
     </div>
   </div>
   <iframe src="foot.html" frameborder="0" width="100%" height="490" style="display:block"></iframe>
+  <div class="popWindow">
+    <div class="popBox">
+      <div class="popInformation"></div>
+      <div class="popBtn">
+        <div class="popEnsure popButton">确定</div>
+        <div class="popCancel popButton">取消</div>
+      </div>
+    </div>
+  </div>
+  <div class="popMsgBox" style="display: none"></div>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="src/libs/jquery.cookie.js"></script>
 <script src="src/libs/cart.js"></script>
 
 <script>
-  $(function(){
+  $(function () {
     var cart = new Cart(".shopcartitle");
-  })	
-    $(".top").click(function(){
-      if(!$("html").is(":animated")){
-          $("html").animate({scrollTop:0},1000);
-      }
-    });
+  })
+  $(".top").click(function () {
+    if (!$("html").is(":animated")) {
+      $("html").animate({ scrollTop: 0 }, 1000);
+    }
+  });
 </script>
+
 </html>

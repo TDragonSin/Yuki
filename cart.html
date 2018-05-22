@@ -17,74 +17,9 @@
     <form action="/web/order/toCheck" method="post" class="form">
       <div class="fullcar">
         <div class="shopcartitle">
-          <div class="numbershop">
-            <input type="checkbox" style="margin-left:16px;margin-right:16px" class="checkAllCurrent xcheckgroup2">
-            <span style="margin:0;">全选</span>
-            <span style="margin-left:120px;">商品信息</span>
-            <span>单价</span>
-            <span>数量</span>
-            <span>优惠</span>
-            <span>总价</span>
-          </div>
-
-          <div class="shopvlue" cartid="3060">
-            <input type="checkbox" name="sku" style="margin-left:16px;margin-right:20px;float:left;line-height:130px;margin-top:60px;"
-              class="xcheckgroup2 checkItem">
-            <input type="hidden" value="3806">
-            <div class="shopimg" onclick="javascript:window.open('/web/good/findGoodDetail/1003')">
-              <img src="http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/gooddetailimg_20180416103615266226.JPEG.JPEG?x-oss-process=image/resize,m_fixed,h_90,w_90">
-            </div>
-            <ul style="display: inline-block;" class="shoprull">
-              <li>《变形金刚5》 正版授权 限量款 大黄蜂 Sqweeks 星巴克杯子</li>
-              <li style="color:#9D9D9D">Sqweeks款 </li>
-
-            </ul>
-            <div class="price">￥
-              <span class="sprice">39.9</span>
-            </div>
-            <!-- 加减-->
-            <!--加减-->
-            <!--数量默认为1-->
-            <div class="gw_number">
-              <div class="gw_num">
-                <div class="jian yunsuan">-</div>
-                <input type="text" value="1" class="num" readonly="">
-                <div class="add yunsuan">+</div>
-              </div>
-            </div>
-            <img src="images/close.png" alt="" class="del">
-            <span style="float:right;margin-top:58px;margin-right:20px;color:#e33955;width: 100px;text-align:center;" class="shopidmessage">
-              ￥
-              <span class="oneprice">39.9</span>
-            </span>
-            <span style="float:right;margin-top:58px;margin-right:135px;color:#e33955" class="shopidmessage">暂无折扣</span>
-          </div>
-
+         <!--  -->
         </div>
-        <div class="buyshop">
-          <input type="checkbox" style="margin-left:16px;margin-right:16px" class="xcheckgroup2 checkAllCurrent">
-          <span style="color:#333333;line-height:64px;">全选</span>
-          <span style="color:#333333;margin-left:40px;line-height:64px;cursor: pointer;" class="delAllCheck">批量删除</span>
-          <div class="clearing">
-            <span>结算</span>
-          </div>
-          <ul class="oldprice">
-            <li>
-              <span style="color:#333333;font-size:14px">合计(不含运费)：</span>
-              <span style="color:#e33955;font-size:24px">￥
-                <span class="twoprice" style="font-size:24px"></span>
-              </span>
-            </li>
-            <li style="color:#999999;">商品合计：￥
-              <span class="threeprice">
-                <span></span>
-              </span>
-              <span style="margin-left:20px;">优惠：
-                <span class="fourprice"></span>
-              </span>
-            </li>
-          </ul>
-        </div>
+      
       </div>
     </form>
     <div class="slider">
@@ -188,7 +123,13 @@
   <iframe src="foot.html" frameborder="0" width="100%" height="490" style="display:block"></iframe>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="src/libs/jquery.cookie.js"></script>
+<script src="src/libs/cart.js"></script>
+
 <script>
+  $(function(){
+    var cart = new Cart(".shopcartitle");
+  })	
     $(".top").click(function(){
       if(!$("html").is(":animated")){
           $("html").animate({scrollTop:0},1000);

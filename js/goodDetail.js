@@ -2,9 +2,8 @@ function Gooddetail(url,selector1,selector2){
   if (!url || !selector1 || !selector2) return;
   this.topEle = $(selector1);
   this.bottomEle = $(selector2);
-  var goodid = window.location.search.split("=")[1];
-  this.url = url+"?goodId="+goodid;
-  console.log(this.url)
+  this.goodid = window.location.search.split("=")[1];
+  this.url = url+"?goodId="+this.goodid;
   this.init()
 }
 Gooddetail.prototype={
@@ -17,8 +16,8 @@ Gooddetail.prototype={
           for(var i in res){
              res[i].forEach(function(item){
               if(item.goodId == res2){
-                this.render_page(item.detailsmallPic);
                 this.render_describe(item);
+                this.render_page(item.detailsmallPic);           
                 this.render_bigImg(item.detailbigPic)
                 this.xuanxiangka();
               }
@@ -59,7 +58,6 @@ Gooddetail.prototype={
   render_page:function(json) {
     this.html = ``;
     json.forEach(function(item){
-    console.log(item.smallPic)
     this.html+=`
                 <a href="" imgurl="${item.smallPic}" rel="zoom1"
                   rev="${item.smallPic}" style="outline: 0px;">
@@ -80,6 +78,7 @@ Gooddetail.prototype={
   render_describe:function(item){
     $(".title").html(item.goodName);
     $(".value").eq(0).html(item.oldPrice/100+".0");
+    $(".shopcar").attr("data-id",parseFloat(this.goodid))
   },
   render_bigImg:function(json){
     this.html2 = ``;

@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yuki动漫-更懂你的二次元社区电商（yukicomic.com）</title>
-    <link rel="shortcut icon" href="http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukiicon/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yuki动漫-更懂你的二次元社区电商（yukicomic.com）</title>
+  <link rel="shortcut icon" href="http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukiicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style/common.css">
   <link rel="stylesheet" href="style/goodsDetail.css">
   <link rel="stylesheet" href="style/pagination.css">
@@ -392,8 +392,12 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/goodDetail.js"></script>
 <script src="js/fangdajing.js"></script>
-<script src="js/xuanxiangka.js"></script>
+<script src="src/libs/jquery.cookie.js"></script>
+<script src="src/libs/gwc.js"></script>
 <script>
+  $(function(){
+    var shopCar = new ShopCar(".pay");
+  })	
     $(".top").click(function(){
       if(!$("html").is(":animated")){
           $("html").animate({scrollTop:0},1000);

@@ -100,7 +100,7 @@ ShopCar.prototype = {
       var shopCarArray = JSON.parse(shopCarString);
       var sum = 0;
       shopCarArray.forEach(function(item){
-        sum += 1;
+        sum += item.num;
       })
       return sum;
     }

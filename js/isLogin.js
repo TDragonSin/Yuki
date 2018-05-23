@@ -1,3 +1,4 @@
+//头部登录成功样式
 if($.cookie("log")){
   var logObj = JSON.parse($.cookie("log"));
   $(".yes>a").html(`${logObj.uname}，您好`);
@@ -9,5 +10,6 @@ if($.cookie("log")){
 }
 $(".exitUser").on("click",function(){
   $.removeCookie("log");
+  parent.location.reload();
   window.location.reload();
 })

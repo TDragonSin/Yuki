@@ -1,1 +1,476 @@
-null
+body {
+  overflow-x: hidden;
+}
+
+.rightFixed {
+  position: fixed;
+  left: 50%;
+  margin-left: 605px;
+  bottom: 100px;
+}
+
+.nav-right div {
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+}
+
+.nav-right {
+  width: 70px;
+  z-index: 8;
+}
+
+.nav-right div .gouwudai, .nav-right div .backTop {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+#serviceBtn {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E5E5E5;
+  border-bottom: 0;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#serviceBtn .serviceBtnName {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  height: 14px;
+}
+
+#serviceBtn .serviceBtnIcon {
+  width: 22px;
+  height: 23px;
+  background: url(http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/service.png) no-repeat;
+  background-size: 100%;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.nav-right .shopping-car {
+  border: 1px solid #E5E5E5;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-right div img {
+  width: 20px;
+  height: 20px;
+  margin-top: 13px;
+  margin-left: 25px;
+}
+
+.nav-right div .gouwudai {
+  height: 14px;
+}
+
+.nav-right .ba {
+  background: #E33955;
+}
+
+.nav-right .badged {
+  position: absolute;
+  display: block;
+  top: 75px;
+  left: 40px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 9px;
+  padding: 0 4px;
+}
+
+.nav-right .top {
+  margin-top: 20px;
+  background: #6699CC;
+  cursor: pointer;
+}
+
+.nav-right .top .backTop {
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.nav-right div .topIcon {
+  width: 14px;
+  height: 7px;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+
+.nav-right div .backTop {
+  height: 70px;
+}
+
+/*******************daojishi**********************/
+.flashBody-title-box {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.flashBody-title-box .flashBody-title {
+  width: 1920px;
+  height: 100px;
+  margin-left: -375px;
+  background: url(http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/flashSaleBg.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.flashBody-title-box .flashBody-title .flashBody-title-box {
+  width: 510px;
+  margin: 0 auto;
+  height: 100%;
+  letter-spacing: -4px;
+}
+
+.flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-child {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  margin-top: 31px;
+}
+
+.flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-left {
+  width: 206px;
+  height: 38px;
+}
+
+.flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-left li {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  width: 38px;
+  height: 38px;
+  background: url(http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/matts.jpg) no-repeat;
+  background-size: 100%;
+  font-size: 28px;
+  line-height: 34px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-mid {
+  font-size: 20px;
+  line-height: 20px;
+  color: #333;
+  font-weight: 600;
+  margin: 47px 20px 0 30px;
+}
+
+.flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-right li {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  width: 20px;
+  height: 38px;
+  font-size: 28px;
+  line-height: 38px;
+  color: #333;
+  text-align: center;
+}
+
+.flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-right .hour, .flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-right .minite, .flashBody-title-box .flashBody-title .flashBody-title-box .flashBody-title-box-right .second {
+  width: 38px !important;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.flashBody-nav {
+  width: 100%;
+  height: 50px;
+  background: #333;
+}
+
+.flashBody-nav .flashBody-navBox {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: -4px;
+  border-left: 1px solid #5C5C5C;
+}
+
+.flashBody-nav li {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  width: 389px;
+  height: 100%;
+  font-size: 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  border-right: 1px solid #5C5C5C;
+  cursor: pointer;
+}
+
+.flashBody-nav .dateChecked {
+  background: #E33955;
+  border-bottom: 4px solid #B31933;
+}
+
+#slider {
+  width: 1170px;
+  height: 420px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#slider .slider_con {
+  width: 1920px;
+  height: 420px;
+  position: absolute;
+  left: -375px;
+}
+
+#slider a div {
+  width: 17px;
+  height: 33px;
+  margin-left: 11.5px;
+  margin-top: 15.5px;
+  background: url(../images/arrows.png) no-repeat 0 2px;
+}
+
+#slider .arrow-left {
+  position: absolute;
+  left: 415px;
+  top: 42%;
+  width: 40px;
+  height: 64px;
+  background: #6699cc;
+  z-index: 999999;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#slider .arrow-right {
+  position: absolute;
+  right: 413px;
+  top: 42%;
+  width: 40px;
+  height: 64px;
+  background: #6699cc;
+  z-index: 999999;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#slider .arrow-right div {
+  width: 17px;
+  height: 33px;
+  margin-left: 11.5px;
+  margin-top: 15.5px;
+  background: url(../images/arrows.png) no-repeat 0 -30px;
+}
+
+#slider .slider_btn {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+  z-index: 6;
+}
+
+#slider .slider_btn .swiper-btn {
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background: #ffffff;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+#slider .slider_btn .swiper-btn-active {
+  background: #6699cc;
+}
+
+#slider .slider_wrapper {
+  width: 1920px;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider .slider_wrapper .swiper-item {
+  width: 1920px;
+  height: 420px;
+  float: left;
+  position: absolute;
+}
+
+#slider .slider_wrapper .swiper-active {
+  z-index: 2;
+}
+
+#slider .slider_wrapper .swiper-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.flashGoodList {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: -80px;
+}
+
+.flashGoodList .flashGoodList-box {
+  width: 1200px;
+  margin-left: -30px;
+  letter-spacing: -4px;
+  padding-bottom: 80px;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  width: 268px;
+  height: 373px;
+  margin-left: 30px;
+  border: 1px solid #E7E7E7;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodImgBox {
+  width: 230px;
+  height: 230px;
+  margin: 20px 20px 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodImgBox .flashGoodList-goodImg {
+  width: 100%;
+  height: 100%;
+  transition: transform 2s;
+  cursor: pointer;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodImgBox .flashGoodList-goodImg:hover {
+  transform: scale(1.1);
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodInfo {
+  width: 100%;
+  padding: 0 14px 7px 14px;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodInfo .flashGoodList-goodInfo-goodTitle1 {
+  padding-top: 14px;
+  line-height: 14px;
+  padding-bottom: 6px;
+  width: 100%;
+  height: 34px;
+  color: #333;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodInfo .flashGoodList-goodInfo-goodTitle2 {
+  line-height: 14px;
+  padding-bottom: 10px;
+  color: #999;
+  width: 100%;
+  height: 24px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodInfo .flashGoodList-goodInfo-count {
+  width: 100%;
+  letter-spacing: -4px;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodInfo .flashGoodList-goodInfo-count .flashGoodList-goodInfo-count-left {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-goodInfo .flashGoodList-goodInfo-count .flashGoodList-goodInfo-count-right {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  color: #e33955;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-price-btn {
+  width: 268px;
+  height: 40px;
+  letter-spacing: -4px;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-price-btn .flashGoodList-price {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  width: 162px;
+  height: 100%;
+  background: #6699CC;
+  text-align: center;
+  line-height: 40px;
+  border-bottom-left-radius: 6px;
+  border: 1px solid #6699CC;
+  margin-left: -1px;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-price-btn .flashGoodList-price span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-price-btn .flashGoodList-price span:nth-child(2) {
+  font-size: 24px;
+  margin-right: 6px;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-price-btn .flashGoodList-price-tomorrow {
+  background: #56d6d6 !important;
+  border: 1px solid #56d6d6 !important;
+}
+
+.flashGoodList .flashGoodList-box .flashGoodList-li .flashGoodList-price-btn .flashGoodList-goToBegin {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: 0;
+  width: 107px;
+  height: 100%;
+  font-size: 14px;
+  line-height: 40px;
+  color: #6699cc;
+  text-align: center;
+  border-bottom-right-radius: 6px;
+  border: 1px solid #6699CC;
+  margin-left: -1px;
+  cursor: pointer;
+}

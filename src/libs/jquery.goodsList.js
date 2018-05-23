@@ -46,6 +46,13 @@
             $("html").animate({scrollTop:0},1000);
         }
       });
+      $(".shopping-car").on("click",function(){
+        if(!$.cookie("log")){
+          window.location.href = "http://localhost/PHP/yuki/login.html";
+        }else{
+          window.location.href = "http://localhost/PHP/yuki/cart.html";
+        }
+      })
       this.mycookie();
     },
     load_data: function () {
@@ -104,7 +111,7 @@
       this.shopCarString = $.cookie("shopCar");
       this.shopCarArray = JSON.parse(this.shopCarString);
       this.shopCarArray.forEach(function(item){
-        this.sum += 1;
+        this.sum += item.num;
       }.bind(this))
       $(".badged").html(this.sum)
     }

@@ -674,6 +674,22 @@
 .nav-right div .gouwudai {
   height: 14px;
 }
+.ba {
+  background: #E33955;
+}
+.badged {
+  position: absolute;
+  display: block;
+  top: 75px;
+  left: 40px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 9px;
+  padding: 0 4px;
+}
 .nav-right .top {
   margin-top: 20px;
   background: #6699CC;
@@ -986,6 +1002,9 @@
   width: 100%;
   height: 100%;
   transition: transform 2s;
+}
+.goodType .goodType-box .goodTypeChild .goodType-list li .goodType-img .imgBorder img:hover{
+  transform: scale(1.1);
 }
 .goodType .goodType-box .goodTypeChild .goodType-list li .goodName {
   position: absolute;

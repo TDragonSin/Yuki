@@ -21,6 +21,7 @@ ShopCar.prototype = {
       this.goodNum++;
       $(".num").val(this.goodNum);
     }.bind(this))
+  
     this.carNum = $(".badged");
     this.carNum.html(this.getSum());
     this.main.on("click.addCar",".shopcar",$.proxy(this.addCar,this));
@@ -43,9 +44,16 @@ ShopCar.prototype = {
     }.bind(this))
   },
   addCar(event){
+    if(!$.cookie("log")){
+      if(this.popShow) {
+        return
+      }
+      $(".popMsgBox").html("请登陆");
+      this.popMsgBox();
+      return;
+    }
     var target = event.target || event.srcElement;
     var goodsId = $(target).attr("data-id");
-    console.log(goodsId)
     if(!$.cookie("shopCar")){
       //表示是第一次存数据;
       var shopCarArray = [
@@ -84,15 +92,15 @@ ShopCar.prototype = {
   },
   changeNum(){
     this.carNum.html(this.getSum());
+    $(".bag_num").html(this.getSum())
   },
   getSum(){
     var shopCarString = $.cookie("shopCar");
-
     if(shopCarString){
       var shopCarArray = JSON.parse(shopCarString);
       var sum = 0;
       shopCarArray.forEach(function(item){
-        sum += item.num;
+        sum += 1;
       })
       return sum;
     }
@@ -113,4 +121,12 @@ ShopCar.prototype = {
     };
     return $.ajax(this.opt)
   },  
+  popMsgBox: function () {
+    this.popShow = true;
+    $(".popMsgBox").show()
+    this.popTimer = setTimeout(function () {
+      $(".popMsgBox").hide();
+      this.popShow = false
+    }.bind(this), 2000)
+  },
 }

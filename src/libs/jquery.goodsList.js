@@ -41,6 +41,12 @@
             // .fail(function (def, type, err_msg) {
             // })
       }.bind(this))
+      $(".top").click(function(){
+        if(!$("html").is(":animated")){
+            $("html").animate({scrollTop:0},1000);
+        }
+      });
+      this.mycookie();
     },
     load_data: function () {
       this.opt = {
@@ -81,8 +87,28 @@
                     }.bind(this))
                     // console.log(this.html);
                     this.main_ele.html(this.main_ele.html() + this.html);
+    },
+    mycookie:function(){
+      this.sum = 0;
+      if(!$.cookie("log")){
+        if(!$.cookie("log")){
+          $(".bag_num").html("0")
+          $(".badged").hide()
+        }else{
+          $(".badged").show()
+        }
+      }
+      if (!$.cookie("shopCar")) {
+        return;
+      }
+      this.shopCarString = $.cookie("shopCar");
+      this.shopCarArray = JSON.parse(this.shopCarString);
+      this.shopCarArray.forEach(function(item){
+        this.sum += 1;
+      }.bind(this))
+      $(".badged").html(this.sum)
     }
-
+    
   }
 
   return Goodslist;

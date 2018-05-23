@@ -6,5 +6,6 @@ requirejs.config({
         "index2":"./src/model/index2",
         "login":"./src/model/login",
         "register":"./src/model/register",
+        "cookie":"./src/libs/jquery.cookie",
     }
 })

@@ -307,3 +307,106 @@ img {
 .oprice {
   color: #e33955;
 }
+
+/*****************backtop*******************/
+.rightFixed {
+  position: fixed;
+  left: 50%;
+  margin-left: 605px;
+  bottom: 100px;
+}
+.nav-right {
+  width: 70px;
+  z-index: 8;
+}
+.nav-right div .gouwudai, .nav-right div .backTop {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+.nav-right div {
+  width: 100%;
+  height: 70px;
+  border-radius: 4px;
+}
+#serviceBtn {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E5E5E5;
+  border-bottom: 0;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+#serviceBtn .serviceBtnName {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  height: 14px;
+}
+#serviceBtn .serviceBtnIcon {
+  width: 22px;
+  height: 23px;
+  background: url(http://yukicomic-pic.oss-cn-hangzhou.aliyuncs.com/yukicomicNew/service.png) no-repeat;
+  background-size: 100%;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.nav-right .shopping-car {
+  border: 1px solid #E5E5E5;
+  cursor: pointer;
+  background: #ffffff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.nav-right div img {
+  width: 20px;
+  height: 20px;
+  margin-top: 13px;
+  margin-left: 25px;
+}
+.nav-right div .gouwudai {
+  height: 14px;
+}
+.ba {
+  background: #E33955;
+}
+.badged {
+  position: absolute;
+  display: block;
+  top: 75px;
+  left: 40px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 9px;
+  padding: 0 4px;
+}
+.nav-right .top {
+  margin-top: 20px;
+  background: #6699CC;
+  cursor: pointer;
+}
+.nav-right div .topIcon {
+  width: 14px;
+  height: 7px;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+.nav-right .top .backTop {
+  color: #ffffff;
+  margin-top: 3px;
+}
+.nav-right div .backTop {
+  height: 70px;
+}
+

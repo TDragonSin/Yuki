@@ -25,6 +25,22 @@ Gooddetail.prototype={
           }
         }.bind(this))
     }.bind(this))
+    $(".rulebox").on("click",".desc",this.style);
+    $(".shopvalue").on("click",function(){
+      $(".shopvalueshow").show();
+      $(".showmetheshop").hide();
+    })
+    $(".eavl").on("click",function(){
+      $(".shopvalueshow").hide();
+      $(".showmetheshop").show();
+    })
+    $(".shopmessage").on("click.change","div",function(){
+      $(this)
+      .siblings()
+      .removeClass("shopchange")
+      .end()
+      .addClass("shopchange")
+    })
   },
   load_goodId: function(){
     this.opt = {
@@ -91,6 +107,10 @@ Gooddetail.prototype={
     }.bind(this))
     
     this.bottomEle.html(this.bottomEle.html() + this.html2);
-  }
+  },
+  style:function(){
+    $(this).toggleClass("desccheck")
+    $(this).find(".sel").toggle();
+  },
 }
 new Gooddetail("http://localhost/PHP/yuki/php/goodsList.php","#showArea",".shopvalueshow")

@@ -46,16 +46,22 @@
             </ul>
           </div>
           <ul class="load">
-            <li>
+            <li class="yes">
+              <a href="/web/my/center">13378240594，您好</a>
+              <span>&nbsp;&nbsp;
+                <a href="javascript:;" class="exitUser">退出</a>
+              </span>
+            </li>
+            <li class="no">
               <a href="">工会会员登录</a>
               <span>|</span>
             </li>
-            <li>
-              <a href="">登录</a>
+            <li class="no">
+              <a href="http://localhost/PHP/yuki/login.html">登录</a>
               <span>|</span>
             </li>
-            <li>
-              <a href="">注册</a>
+            <li class="no">
+              <a href="http://localhost/PHP/yuki/register.html">注册</a>
               <span>|</span>
             </li>
             <li>
@@ -138,7 +144,7 @@
       </li>
       <li class="typeLi" style="background-color: rgb(245, 245, 245); opacity: 0.98;">
         <img src="images/yukiicon_20180420132229931943.png" alt="" class="listImg">
-        <span class="listName" typeoneid="4">美妆个护</span>
+        <span class="listName" typeoneid="4" onclick="location.href='http://localhost/PHP/yuki/goodsList.html'">美妆个护</span>
         <ul class="hideUl" style="display: none;">
           <li>
             <div class="childimg" style="background:url('images/yukiicon_20170613164309840515.png') center no-repeat;background-size:100%;"></div>
@@ -476,7 +482,7 @@
         <div class="shopping-car">
           <img src="images/icon_cart.png" alt="">
           <div class="gouwudai">购物袋</div>
-          <span class="badged ba" style="display: none;"></span>
+          <span class="badged ba">0</span>
         </div>
         <div class="top" style="display: block;">
           <img src="images/arrow-index.png" alt="" class="topIcon">
@@ -1535,11 +1541,12 @@
 <script src="src/libs/jquery.cookie.js"></script>
 <script src="js/jquery.banner2.js"></script>
 <script src="js/erjicaidan.js"></script>
-<script src="js/imgbig.js"></script>
-<script src="js/replace.js"></script>
+<!-- <script src="js/replace.js"></script> -->
 <script src="js/leftnav.js"></script>
 <script src="js/daojishi.js"></script>
-
+<script src="js/cartNum.js"></script>
+<script src="js/isLogin.js"></script>
+<script src="js/badged.js"></script>
 <script>
   $(function () {
     $(".slider_con")
@@ -1555,7 +1562,7 @@
         loop: true
       })
     $(".daojishi")
-    .Countdown(".daojishi-time","2018/5/21")
+    .Countdown(".daojishi-time","2018/5/23")
   });
   //商品名称
   $(document).on("mouseover", ".goodType-img", function () {
@@ -1564,8 +1571,6 @@
   $(document).on("mouseout", ".goodType-img", function () {
     $($(this).next()).css({ "color": "rgb(51,51,51)" });
   })
-  //商品图片移入移出特效
-  $.yuangeEnlarge(".imgBorder>img", 200, 188);
   //foot图片二维码
   $(function(){
     $(".weChartIcon").mouseover(function(){

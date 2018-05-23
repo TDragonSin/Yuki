@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="style/common.css">
   <link rel="stylesheet" href="style/header.css">
 </head>
+
 <body>
   <div id="most_top">
     <div class="container">
@@ -43,16 +45,22 @@
         </ul>
       </div>
       <ul class="load">
-        <li>
+        <li class="yes">
+          <a href="/web/my/center">13378240594，您好</a>
+          <span>&nbsp;&nbsp;
+            <a href="javascript:;" class="exitUser">退出</a>
+          </span>
+        </li>
+        <li class="no">
           <a href="">工会会员登录</a>
           <span>|</span>
         </li>
-        <li>
-          <a href="">登录</a>
+        <li class="no">
+          <a href="http://localhost/PHP/yuki/login.html" target="_parent">登录</a>
           <span>|</span>
         </li>
-        <li>
-          <a href="">注册</a>
+        <li class="no">
+          <a href="http://localhost/PHP/yuki/register.html" target="_parent">注册</a>
           <span>|</span>
         </li>
         <li>
@@ -105,4 +113,7 @@
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/most_top.js"></script>
+<script src="src/libs/jquery.cookie.js"></script>
+<script src="js/cartNum.js"></script>
+<script src="js/isLogin.js"></script>
 </html>

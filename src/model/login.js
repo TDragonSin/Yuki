@@ -143,7 +143,8 @@
       $.ajax(opt)
       .then(function(res){
         if(res == 1){
-          alert("注册成功");
+          this.addReg();
+          window.location.href = "http://localhost/PHP/yuki/login.html";
         }else{
           $(".warning")
           .show()
@@ -152,7 +153,24 @@
           this.succ = false;
         }
       }.bind(this))
-    }
+    },
+    addReg:function(){
+      if(!$.cookie("reg")){
+        //表示是第一次存数据;
+        var regObj =
+          {
+            uname:$(".phone").val(),
+            upwd:$(".pwd").val()
+          }
+       
+        $.cookie("reg",JSON.stringify(regObj))
+        return 0;
+      }
+      var regObj = JSON.parse($.cookie("reg"))
+      regObj.uname = $(".phone").val();
+      regObj.upwd = $(".pwd").val();
+      $.cookie("reg",JSON.stringify(regObj));
+    },
   }
 
 
@@ -165,6 +183,11 @@
   User_log.prototype={
     constructor:User_log,
     init:function(){
+      if($.cookie("reg")){
+        var regObj = JSON.parse($.cookie("reg"))
+        $(".phone").val(regObj.uname)
+        $(".pwd").val(regObj.upwd)
+      }
       $(".phone").on("blur",function(){
         this.verification();
         this. phoneblur_error();
@@ -285,7 +308,8 @@
       $.ajax(opt)
       .then(function(res){
         if(res != 0){
-          alert("登录成功");
+          this.addLog();
+          window.location.href = "http://localhost/PHP/yuki/index.html";
         }else{
           this.popMsgBox()
           $(".popMsgBox")
@@ -294,7 +318,21 @@
         }
       }.bind(this))
     },
-
+    addLog:function(){
+      if(!$.cookie("log")){
+        //表示是第一次存数据;
+        var logObj = 
+          {
+            uname: $(".phone").val(),
+            isLogin:true
+          }
+        $.cookie("log",JSON.stringify(logObj))
+        return 0;
+      }
+      var logObj = JSON.parse($.cookie("log"))
+      logObj.uname = $(".phone").val();
+      $.cookie("log",JSON.stringify(logObj));
+    },
     popMsgBox:function(){
       this.popShow = true;
       $(".popMsgBox") .show()    

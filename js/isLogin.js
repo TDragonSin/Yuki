@@ -10,6 +10,6 @@ if($.cookie("log")){
 }
 $(".exitUser").on("click",function(){
   $.removeCookie("log");
-  parent.location.reload();
-  window.location.reload();
+  parent.location.href="http://localhost/PHP/yuki/index.html"
+  // window.location.reload();
 })

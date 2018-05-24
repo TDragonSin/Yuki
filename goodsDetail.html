@@ -78,7 +78,7 @@
   </div>
   <div id="header">
     <div class="container">
-      <a href="#" class="logo">
+      <a href="http://localhost/PHP/yuki/index.html" class="logo">
         <img src="images/logo.png" alt="">
       </a>
       <div class="car">
@@ -119,7 +119,7 @@
         Yuki动漫&nbsp;&gt;&nbsp;
         <a href="">影漫周边</a>&nbsp;&gt;&nbsp;
         <a href="">杯子</a>&nbsp;&gt;&nbsp;
-        <a href="">《变形金刚5》 正版授权 限量款 大黄蜂 Sqweeks 星巴克杯子</a>
+        <a href=""></a>
       </span>
     </div>
     <div class="shopshow">
@@ -511,9 +511,7 @@
   });
 </script>
 <script>
-
   $('html,body').on('click', addProduct);
-
   function addProduct(event) {
 
     var offset = $(".shopping-car>img").offset(), flyer = $('<img class="u-flyer" src="images/fly.png"/>');
@@ -522,31 +520,18 @@
       height: 50
     })
     flyer.fly({
-
       start: {
-
         left: event.clientX,
-
         top: event.clientY
-
       },
-
       end: {
-
         left: offset.left,
-
         top: offset.top,
-
         width: 20,
-
         height: 20
-
       }
-
     });
-
   }
-
 </script>
 
 </html>

@@ -26,7 +26,9 @@ Cart.prototype = {
     $(".gw_num").on("click.single", ".jian", $.proxy(this.single, this));
     $(".gw_num").on("click.single", ".add", $.proxy(this.single, this));
     $(".shopcartitle").on("click", ".del", $.proxy(this.popAppear, this));
-    $(".buyshop").on("click", ".delAllCheck", $.proxy(this.popAppear, this))
+    $(".buyshop").on("click", ".delAllCheck", $.proxy(this.popAppear, this));
+    $(":checkbox").prop("checked", true);
+    this.calc(true);
     this.checkbox();
   },
   render: function (json) {

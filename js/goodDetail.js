@@ -18,7 +18,7 @@ Gooddetail.prototype={
               if(item.goodId == res2){
                 this.render_describe(item);
                 this.render_page(item.detailsmallPic);           
-                this.render_bigImg(item.detailbigPic)
+                this.render_bigImg(item.detailbigPic);
                 this.xuanxiangka();
               }
             }.bind(this));
@@ -92,6 +92,7 @@ Gooddetail.prototype={
     $("#zoom1").attr("imgurl",$("#showArea a").eq(0).attr("imgurl"));
   },
   render_describe:function(item){
+    $(".navtitle span a").eq(2).html(item.goodName);
     $(".title").html(item.goodName);
     $(".value").eq(0).html(item.oldPrice/100+".0");
     $(".shopcar").attr("data-id",parseFloat(this.goodid))

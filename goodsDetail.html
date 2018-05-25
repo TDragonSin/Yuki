@@ -513,7 +513,10 @@
 <script>
   $('html,body').on('click', addProduct);
   function addProduct(event) {
-
+    
+    if($(event.target).attr("class") != "shopcar" || !$.cookie("log")){
+      return;
+    }
     var offset = $(".shopping-car>img").offset(), flyer = $('<img class="u-flyer" src="images/fly.png"/>');
     flyer.css({
       width: 30,

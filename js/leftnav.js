@@ -11,25 +11,7 @@ Leftnav.prototype={
         $(".nav-left").removeClass("fixed").addClass("default");
         $(".top").hide();
       }
-      var top = $(document).scrollTop();
-      var menu = $("#menu");
-      var title = $(".title");
-      var curId = "";
-      title.each(function(){
-          var m = $(this);
-          var titleTop = m.offset().top;
-          if(top >　titleTop -300){
-              curId = "#"+ m.attr("id");
-          }else{
-              return false;
-          }
-      });
-      var cur = menu.find(".change")
-      var curLink = menu.find(".change").find("a");
-      if(curId !="" && curLink.attr("href") != curId){
-        cur.removeClass("change")
-        menu.find("[href=" +"'" +curId + "'" + "]").addClass("change")
-      }
+      this.addChange();
     }.bind(this))
     $(".top").click(function(){
       if(!$("html").is(":animated")){
@@ -37,5 +19,26 @@ Leftnav.prototype={
       }
     });
   },
+  addChange:function(){
+    var top = $(document).scrollTop();
+    var menu = $("#menu");
+    var title = $(".title");
+    var curId = "";
+    title.each(function(){
+        var m = $(this);
+        var titleTop = m.offset().top;
+        if(top >　titleTop -300){
+          curId = "#"+ m.attr("id");
+        }else{
+          return false;
+        }
+    });
+    var cur = menu.find(".change")
+    var curLink = menu.find(".change").find("a");
+    if(curId !="" && curLink.attr("href") != curId){
+      cur.removeClass("change")
+      menu.find("[href=" +"'" +curId + "'" + "]").addClass("change")
+    }
+  }
 }
 new Leftnav();
